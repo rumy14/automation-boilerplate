@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class SeleniumTest {
     public static void main(String[] args) {
         // Set the path to the ChromeDriver executable
-        System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "java -Dwebdriver.chrome.driver=./chromedriver -cp target/classes automation.smoke.SeleniumTest");
 
         // Initialize ChromeDriver
         WebDriver driver = new ChromeDriver();
